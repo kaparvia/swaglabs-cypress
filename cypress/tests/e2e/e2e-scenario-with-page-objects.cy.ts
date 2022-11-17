@@ -78,27 +78,4 @@ describe('Inventory', () => {
 
         CheckoutSummaryPage.finish();
     })
-
-
-    //
-    // OPTIONS FOR MANIPULATING ALL INVENTORY ITEMS ON PAGE
-    // 
-
-    // Option #1: All the code in the test case
-    // 
-    // cy.get('.inventory_item')
-    //     .each( $item => {
-    //         cy.wrap($item).find('.btn_primary').click();
-    //     })
-
-    // Option #2: Top level search in page object, returns page elements
-    // 
-    // InventoryPage.getAllItems()
-    //     .each( $item => {
-    //          cy.wrap($item).find('.btn_primary').click();
-    //      })
-
-    // Option #3: Both search and action code as in page object. Returns page elements
-    //
-    // InventoryPage.getAllItems().each(InventoryPage.addToCartAction);
 })
